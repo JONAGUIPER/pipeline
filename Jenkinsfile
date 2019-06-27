@@ -1,5 +1,7 @@
 pipeline{
-   agent master
+   agent {
+      label 'linux'
+   }
    stages{
        stage('saludo'){
            steps{
